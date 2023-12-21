@@ -1,0 +1,65 @@
+.dashboard{
+  height: 100% !important;
+}
+.countCard_wrapper{
+  width: 100%;
+  padding: 20px 50px 20px 140px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+
+
+.chart_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 30px 50px 140px !important;
+  row-gap: 30px;
+  column-gap: 20px;
+  height: 100%;
+}
+
+.table_info__field{
+  width: 100%;
+  padding: 30px 130px;
+}
+
+@media (max-width:1000px){
+  .chart_wrapper{
+    width: auto !important;
+    padding: 30px 0px 30px 30px !important;
+    padding-right: 120px !important;
+    row-gap: 70px;
+    justify-content: center;
+  }
+  .table_info__field{
+    padding: 40px;
+    padding-right: 90px ;
+  
+  }
+  .countCard_wrapper{
+    padding: 30px 80px 30px 0px;
+    justify-content: center;
+  }
+}
+
+@media (max-width:420px){
+  .chart_wrapper{
+    width: auto !important;
+    padding: 30px;
+    padding-right: 120px !important;
+    row-gap: 70px;
+  }
+  .table_info__field{
+    padding: 20px  0px 0px 30px;
+    width:auto;
+  
+  }
+  .countCard_wrapper{
+    padding: 40px 100px 40px 20px !important;
+  }
+}
+
+

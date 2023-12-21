@@ -1,0 +1,62 @@
+
+
+.count_card{
+  width: 380px;
+  padding: 15px 0px;
+  padding-bottom: 0;
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.count_card_count{
+  padding: 0px 20px;
+}
+.count_card_count h1{
+  color: white;
+}
+
+.chart_students{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.chart_students h3{
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.chart_students .chart{
+  width:    50px;
+  height: 50px;
+  color: white;
+}
+
+.countCard_link{
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.countCard_link h4{
+  font-weight: 400;
+  color: white;
+}
+
+@media (max-width: 420px) {
+  .count_card{
+    width: 250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .count_card{
+    width: 280px;
+  }
+}

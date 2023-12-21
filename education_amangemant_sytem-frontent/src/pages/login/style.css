@@ -1,0 +1,111 @@
+.login_wrapper {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url('../../assets/images/login-bg2.jpg');
+  background-repeat: no-repeat;
+  object-fit:cover;
+  background-size: cover;
+  background-attachment: fixed;   */
+}
+
+
+
+.login_wrapper__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  background-color: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.login_wrapper_title {
+  font-weight: 400;
+  font-size: 30px;
+  color: rgb(57, 56, 77);
+  text-align: center;
+}
+
+.login_wrapper_description {
+  margin-top: 10px;
+  color: rgb(178, 176, 184);
+  text-align: center;
+  width: 80%;
+
+}
+
+.login_input__wrapper{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0,0.2) !important;
+  margin-top: 40px;
+  height: 50px;
+  background: rgb(250, 251, 254) !important;
+  align-items:center !important;
+  justify-content: center;
+  border-radius: 12px;
+  padding-right: 10px;
+
+}
+
+
+.login_wrapper_input {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 12px;
+  padding-left: 15px;
+  color: rgb(89, 90, 98);
+  border: none;
+  background-color: transparent;
+
+}
+
+.password_input {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  outline: none;
+  color: rgb(89, 90, 98);
+  padding: 18px;
+}
+
+/* .password_input:hover{
+    background: rgb(250, 251, 254);
+    border: 1px solid rgb(240, 238, 247);
+} */
+
+
+.login_wrapper_btn{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 0px 15px;
+  background: linear-gradient(to right, #0575e6 0%, #021b79 51%, #0575e6 100%);
+  margin-top: 50px;
+  width: 90%;
+  height: 50px;
+  border: 1px solid rgb(240, 238, 247);
+  border-radius: 12px;
+}

@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+ul,ol, li {
+  list-style: none;
+}
+
+body{
+  /* overflow-x: hidden; */
+}
+main , header , footer {
+  width: 100%;
+}
+
+main{
+height: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --main-bg:#fff;
+  --sidebar-bg:#1f2739;
+  --sidebarTextColor:#D1D5DB;
+  --sidebarTextColorHover:#ffffff;
+  --resize-col:white;
+  --resize-col-bg:#787878;
+  --resized-logo:70px;
+  --primary-text-color:#fff;
+  --sidebar-items-color:#cacaca;
+  --sidebar-items-color-hover:#fff;
+  --sidebar-items-hover-bg:rgba(255, 255, 255, 0.2);
+  --avatar-text-color: rgb(255, 255, 255);
+  --avatar-bg-color-sup: #aaa;
+  --avatar-bg-color:#1F2739;
+  --avatar-bg-hover-color: #161616;
+  --avatar-online-status: #00da00;
+  --avatar-font-size: 16px;
+  --avatar-btn-transition: all 0.4s ease-out;
+  --setings-color:#fff;
+  --setings-bg:#1F2739;
+  --settings_modal-bg:#1F2739;
+  --settings_modal-text:#fff;
+  --settings_modal_hover:rgba(155, 155, 155, 0.4);
+  --settings_modal_active:rgba(255, 255, 255, 0.5);
+  --notefication-color:#000;
+  --toggle-side_icon-color:#000;
+  --search_input_field_bg:rgba(0,0,0,0.1);
+  --search_input_field_bg_hover:rgba(0,0,0,0.2);
+  --chart_field_bg:rgba(255,255,255,0.5);
+  --chart_field_bg_header:rgb(52, 141, 243);
+  --table_color:black;
+  --tableColor:white;
+  --tab_bg:rgba(255,255, 255,0.5);
+  --tab-text:black;
+  --tab_btn_color:black;
+
+}
+.layout{
+  background: var(--main-bg);
+  width: 100%;
+  height: 100% !important;
+}
+
+.layout.theming-whitening{
+    --main-bg:#fff;
+    --sidebar-bg:#312E81;
+    --sidebarTextColor:#1D1E22;
+    --sidebarTextColorHover:#000;
+    --resize-col:white;
+    --resize-col-bg:#cbcbcb;
+    --resized-logo:70px;
+    --primary-text-color:#fff;
+    --sidebar-items-color:#cacaca;
+    --sidebar-items-color-hover:#fff;
+    --sidebar-items-hover-bg:rgba(255, 255, 255, 0.2);
+    --avatar-text-color: #fff;
+    --avatar-bg-color-sup: #d2d2d2;
+    --avatar-bg-color: #312E81;
+    --avatar-bg-hover-color: #6865ce;
+    --avatar-online-status: #00da00;
+    --avatar-font-size: 16px;
+    --avatar-btn-transition: all 0.2s ease-out;
+    --setings-color:#000;
+    --setings-color:#fff;
+    --setings-bg:#312E81;  
+    --settings_modal-bg:#312E81;
+    --settings_modal-text:#fff;
+    --settings_modal_hover:rgba(155, 155, 155, 0.4);
+    --settings_modal_active:rgba(255, 255, 255, 0.5);
+    --notefication-color:#312E81;
+  --toggle-side_icon-color:#000;
+  --search_input_field_bg:rgba(0,0,0,0.1);
+  --search_input_field_bg_hover:rgba(104, 81, 81, 0.2);
+  --chart_field_bg:rgba(255,255,255,0.5);
+  --chart_field_bg_header:rgb(52, 141, 243);
+  --table_color:black;
+  --tableColor:white;
+  --tab_bg:rgba(255,255, 255,0.5);
+  --tab-text:black;
+  --tab_btn_color:black;
+
+
+
+
+}
+
+
+.layout.theming-blue{
+    --main-bg:#050c46;
+    --sidebar-bg:#050e65;
+    --sidebarTextColor:#949292;
+    --sidebarTextColorHover:#ffff;
+    --resize-col:white;
+    --resize-col-bg:rgba(255,255,255,0.3);
+    --resized-logo:70px;
+    --primary-text-color:#fff;
+    --sidebar-items-color:#cacaca;
+    --sidebar-items-color-hover:#fff;
+    --sidebar-items-hover-bg:rgba(0, 0, 0, 0.2);
+    --avatar-text-color: rgb(255, 255, 255);
+    --avatar-bg-color-sup: #5e5e5e;
+    --avatar-bg-color: #071ac5;
+    --avatar-bg-hover-color: #050E65;
+    --avatar-online-status: #00da00;
+    --avatar-font-size: 16px;
+    --avatar-btn-transition: all 0.2s ease-out;
+    --setings-color:#fff;
+    --setings-color:#fff;
+    --setings-bg:#071ac5;
+    --settings_modal-bg:#071ac5;
+    --settings_modal-text:#fff;
+    --settings_modal_hover:rgba(155, 155, 155, 0.4);
+    --settings_modal_active:rgba(255, 255, 255, 0.5);
+    --notefication-color:#071ac5;
+    --toggle-side_icon-color:#fff;
+    --search_input_field_bg:rgba(255,255,255,0.5);
+    --search_input_field_bg_hover:rgba(255,255,255,0.6);
+    --chart_field_bg:#050e65  ;
+    --chart_field_bg_header:rgb(11, 89, 178);
+    --table_color:#ffff;
+    --tableColor:rgb(11, 89, 178);
+    --table_color:white;
+    --tableColor:#071ac5;
+    --tab_bg:rgba(42, 44, 179, 0.5);
+    --tab-text:white;
+    --tab_bg:rgba(255,255, 255,0.5);
+    --tab-text:black;
+    --tab_btn_color:white;
+  
+}
+
+
+.layout.theming-dark{
+  --main-bg:#070707;
+--sidebar-bg:#212121;
+  --sidebarTextColor:#949292;
+  --sidebarTextColorHover:#ffff;
+  --resize-col:white;
+  --resize-col-bg:rgba(255,255,255,0.2);
+  --resized-logo:70px;
+  --primary-text-color:#fff;
+  --sidebar-items-color:#cacaca;
+  --sidebar-items-color-hover:#fff;
+  --sidebar-items-hover-bg:rgba(255, 255, 255, 0.2);
+  --avatar-text-color: rgb(255, 255, 255);
+  --avatar-bg-color-sup: #5e5e5e;
+  --avatar-bg-color: #2b2b2b;
+  --avatar-bg-hover-color: #161616;
+  --avatar-online-status: #00da00;
+  --avatar-font-size: 16px;
+  --avatar-btn-transition: all 0.4s ease-out;
+  --setings-color:#fff;
+  --setings-color:#fff;
+  --setings-bg:rgba(255, 255, 255, 0.2);
+  --settings_modal-bg:#212121;
+  --settings_modal-text:#fff;
+  --settings_modal_hover:rgba(0, 0, 0, 0.4);
+  --settings_modal_active:rgba(0, 0, 0, 0.5);
+  --notefication-color:#fff;
+  --toggle-side_icon-color:#fff;
+  --search_input_field_bg:rgba(255,255,255,0.5);
+  --search_input_field_bg_hover:rgba(255,255,255,0.6);
+  --chart_field_bg:#212121;
+  --chart_field_bg_header:rgb(50, 50, 50);
+  --table_color:#ffff;
+  --tableColor:black;
+  --tab_bg:rgba(0, 0, 0, 0.5);
+  --tab-text:white;
+  --tab_btn_color:white;
+
+}
+
+
+
+.layout.theming-white{
+  --main-bg:#e4e4e4;
+  --sidebar-bg:#F3F4F6;
+  --sidebarTextColor:#949292;
+  --sidebarTextColorHover:#ffff;
+  --resize-col:black;
+  --resize-col-bg:rgba(0,0,0,0.2);
+  --resized-logo:70px;
+  --primary-text-color:#060606;
+  --sidebar-items-color:#060606;
+  --sidebar-items-color-hover:#fff;
+  --sidebar-items-hover-bg:rgba(0, 0, 0, 0.3);
+  --avatar-text-color: #000;
+  --avatar-bg-color-sup: #d2d2d2;
+  --avatar-bg-color: #f4f4f4;
+  --avatar-bg-hover-color: #ffffff;
+  --avatar-online-status: #00da00;
+  --avatar-font-size: 16px;
+  --avatar-btn-transition: all 0.4s ease-out;
+  --setings-color:#000;
+  --setings-bg:#fff;
+  --settings_modal-bg:#fff;
+  --settings_modal-text:#000;
+  --settings_modal_hover:rgba(0, 0, 0, 0.4);
+  --settings_modal_active:rgba(0, 0, 0, 0.5)
+  --notefication-color:#000;
+  --toggle-side_icon-color:#000;
+  --search_input_field_bg:rgba(0,0,0,0.1);
+  --search_input_field_bg_hover:rgba(0,0,0,0.2);
+  --table_color:#000;
+  --tableColor:white;
+  --tab_bg:rgba(255, 255, 255, 0.5);
+  --tab-text:black;
+  --tab_btn_color:black;
+  
+
+}
+
+.hero-main{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100% !important;
+
+
+}
+.hero_nav{
+  display: flex;
+  height: 100% !important;
+}

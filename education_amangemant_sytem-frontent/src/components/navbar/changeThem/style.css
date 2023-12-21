@@ -1,0 +1,62 @@
+.themingList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.theming_wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.theming_btn{
+  margin-left: 30px;
+  border: 1px dotted ;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+}
+@media (max-width:420px){
+  .theming_btn{
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width:420px){
+  .theming_btn{
+      width: 40px;
+      height: 40px;
+  }
+}
+
+.theming_btn:nth-child(1){
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 50%, hsla(240, 90%, 49%, 1) 50%, hsla(300, 100%, 25%, 1) 50%, hsla(286, 43%, 46%, 1) 100%, hsla(0, 0%, 100%, 1) 100%, hsla(246, 48%, 47%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 50%, hsla(240, 90%, 49%, 1) 50%, hsla(300, 100%, 25%, 1) 50%, hsla(286, 43%, 46%, 1) 100%, hsla(0, 0%, 100%, 1) 100%, hsla(246, 48%, 47%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 50%, hsla(240, 90%, 49%, 1) 50%, hsla(300, 100%, 25%, 1) 50%, hsla(286, 43%, 46%, 1) 100%, hsla(0, 0%, 100%, 1) 100%, hsla(246, 48%, 47%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#0C0CEC", GradientType=1 );
+}
+
+.theming_btn:nth-child(2){
+  background-color: blue !important;
+}
+
+.theming_btn:nth-child(3){
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 51%, rgba(255,255,255,1) 51%);
+
+}
+
+.theming_btn:nth-child(4){
+background-color: black;
+}
+
+.theming_btn:nth-child(5){
+  background-color:#fff;
+}

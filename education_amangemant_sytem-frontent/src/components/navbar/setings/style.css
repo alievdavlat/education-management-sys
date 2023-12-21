@@ -1,0 +1,80 @@
+.settings_modal {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: var(--settings_modal-bg);
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top:60px;
+  left: -100px;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 1000px) {
+.settings_modal{
+  left: -70px;
+  top: 80px;
+}
+}
+
+@media (max-width: 1000px) {
+.settings_modal{
+  left: -70px;
+  top: 80px;
+}
+}
+
+.settings_modal_items {
+  background-color: transparent;
+  border: none;
+  padding: 30px 20px;
+  color: var(--settings_modal-text);
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.settings_modal_items:not(:active):hover,
+.settings_modal_items:focus {
+  background-color:var(--settings_modal_hover);
+}
+
+.settings_modal_items:focus,
+.settings_modal_items:active {
+  background-color: var(--settings_modal_active);
+  outline: none;
+}
+
+.settings_modal_items::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #2F81F7;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.settings_modal_items:focus::before,
+.settings_modal_items:active::before {
+  opacity: 1;
+}
+
+.settings_modal_items svg {
+  width: 15px;
+}
+
+.settings_modal:hover > :not(.settings_modal_items:hover) {
+  transition: 300ms;
+  filter: blur(1px);
+  transform: scale(0.95,0.95);
+}

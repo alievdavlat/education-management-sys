@@ -1,0 +1,48 @@
+.chartField{
+  background:var(--chart_field_bg);
+  border-radius: 3px;
+  transition: all 0.1s linear;
+
+}
+.chartField_header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: var(--chart_field_bg_header) !important;
+  color: white;
+}
+.chartField_header span{
+   margin-left: 70px;
+   cursor: pointer;
+}
+.chartField_header h4{
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+.chartField_body{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.5s ease-in;
+  transition-delay: .5s;
+
+}
+
+.chartField_body.hideBody {
+display: none;
+
+}
+
+
+
+@media (max-width:420px){
+  .chartField_header,
+  .chartField_body,
+  .chartField_header,
+  .chartField{
+    width: auto !important;
+  }
+}
